@@ -97,7 +97,7 @@ DPSolver::Result DPSolver::solve(const Graph &graph, int from, int to) const
         step.node = v;
 
         if (v == to) {
-            // рекурсия: до конечного узла идти не надо.
+            // база рекурсии: до конечного узла идти не надо
             step.isBase    = true;
             step.fValue    = 0.0;
             step.chosenVia = -1;
